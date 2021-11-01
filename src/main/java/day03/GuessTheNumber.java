@@ -11,10 +11,10 @@ public class GuessTheNumber {
     public static void main(String[] args) {
         GuessTheNumber guessTheNumber = new GuessTheNumber();
         Random random = new Random();
-        guessTheNumber.tipNumber = random.nextInt();
+        guessTheNumber.tipNumber = random.nextInt(100);
         System.out.println(guessTheNumber.calculate());
     }
-    
+
     public String calculate(){
         Scanner scanner = new Scanner(System.in);
         for (int i = 0; i < 5; i++){
